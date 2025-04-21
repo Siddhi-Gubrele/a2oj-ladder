@@ -3,26 +3,28 @@
 using namespace std;
 int main()
 {
-    int n = 0, sum = 0;
-    cin >> n;
-    int arr[n];
-    int array[n / 2];
-    for (int i = 0; i < n; i++)
+    int length = 0, sum = 0;
+    cin >> length;
+    int arr[length];
+    int array[length / 2];
+    for (int i = 0; i < length; i++)
     {
         cin >> arr[i];
     }
-    sort(arr, arr + n);
-    for (int i = 0; i < n; i++)
+    sort(arr, arr + length);
+    for (int i = 0; i < length; i++)
     {
         cout << arr[i] << " ";
     }
     cout << endl;
-    for (int i = 0; i < (n - 1); i++)
+    for (int i = 0; i < (length - 1); i++)
     {
         sum = sum + arr[i + 1] - arr[i];
         i++;
     }
     cout << sum << endl;
+
+    // this is a test comment
 
     return 0;
 }
